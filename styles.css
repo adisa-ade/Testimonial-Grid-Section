@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(210, 46%, 95%);
+}
+
+.border{
+    border-radius: 10px;
+}
+img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 100%) ;
+    border-radius: 50%;
+    margin: 25px 0 -7px 20px;
+}
+.author{
+    display: inline-block;
+    margin-left: 10px;
+}
+.author-name{
+    color:hsl(0, 0%, 100%);
+    opacity: 95%;
+    font-size: 1rem;
+}
+.author-position{
+    color: hsl(0, 0%, 100%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.review{
+    margin: 30px;
+}
+.review-head{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    position:relative; 
+    z-index:1;
+}
+.review-body{
+    color:hsl(0, 0%, 100%);
+    opacity: 70%;
+    margin-top: 15px;
+}
+.color1{
+    color: #000;
+    opacity: 90%;
+}
+.color2{
+    color: #000;
+    opacity: 50%; 
+}
+#color2{
+    margin-top: 35px;
+    line-height: 20px;
+}
+/* SCREEN LESS THAN 800 PIXEL WIDE */
+@media screen and (max-width:800px) {
+     .container{
+        width:100%;
+        height: 100vh;
+        margin-top: 50px;
+        display: grid;
+        grid-template-rows:repeat(5, 1fr);
+        grid-template-areas: 
+        "card1"
+        "card2" 
+        "card3"
+        "card4" 
+        "card5";
+        row-gap:3rem;    
+}   
+   .grid-card-one{
+    grid-area: card1;
+    width: 400px;
+    height: 450px;
+    background-color: hsl(263, 55%, 52%);
+}
+.grid-card-one .logo{
+    display: flex;
+    justify-content: flex-end;
+    margin: -90px 30px -50px 0;
+    
+}
+.grid-card-one #logo{
+    border:0; 
+    border-radius:0;
+    height: 130px;
+    width:125px;
+}
+ .grid-card-two{
+    grid-area: card2;
+    width: 400px;
+    height: 300px;
+    background-color: hsl(217, 19%, 35%);
+} 
+ .grid-card-three{
+    grid-area: card3;
+    width: 400px;
+    height: 280px;
+    background-color: hsl(0, 0%, 100%);
+} 
+.grid-card-four{
+    grid-area: card4;
+    width: 400px;
+    height: 420px;
+    background-color:hsl(219, 29%, 14%);
+    
+}
+.grid-card-five{
+    grid-area: card5;
+    width: 400px;
+    height: 500px;
+    background-color:hsl(0, 0%, 100%);
+}
+}
+/* FOR TABLETS SCREEN*/
+@media screen and (min-width:800px) {
+    .container{
+        width:100%;
+        height: 100vh;
+        margin: 50px;
+        display: grid;
+        grid-template-rows:repeat(5, 1fr);
+        grid-template-areas: 
+        "card1 card4" 
+        "card2 card3" 
+        "card5 card5";
+        row-gap:2rem;
+}   
+   .grid-card-one{
+    grid-area: card1;
+    width: 380px;
+    height: 450px;
+    background-color: hsl(263, 55%, 52%);
+}
+.grid-card-one .logo{
+    display: flex;
+    justify-content: flex-end;
+    margin: -90px 30px -50px 0;
+    
+}
+.grid-card-one #logo{
+    border:0; 
+    border-radius:0;
+    height: 130px;
+    width:125px;
+}
+ .grid-card-two{
+    grid-area: card2;
+    width: 380px;
+    height: 300px;
+    background-color: hsl(217, 19%, 35%);
+} 
+ .grid-card-three{
+    grid-area: card3;
+    width: 380px;
+    height: 300px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: -3rem;
+} 
+.grid-card-four{
+    grid-area: card4;
+    width: 380px;
+    height: 450px;
+    background-color:hsl(219, 29%, 14%);
+    margin-left: -3rem;
+}
+.grid-card-five{
+    grid-area: card5;
+    width: 800px;
+    height: 320px;
+    background-color:hsl(0, 0%, 100%);   
+}
+}
+/* FOR DESKTOP SCREENS */
+@media screen and (min-width:1400px) {
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width:100%;
+        height: 100vh;
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns:auto auto auto;
+        grid-template-rows:auto auto;
+        grid-template-areas: 
+        "card1 card1 card2 card5"
+        "card3 card4 card4 card5";   
+}
+.grid-card-one{
+    position: relative;
+    grid-area: card1;
+    width: 650px;
+    height: 320px;
+    background-color: hsl(263, 55%, 52%);
+    
+}
+.grid-card-one .logo{
+    display: flex;
+    justify-content: flex-end;
+    margin: -90px 100px -50px 0;
+    
+}
+.grid-card-one #logo{
+    border:0; 
+    border-radius:0;
+    height: 130px;
+    width:125px;
+}
+.grid-card-two{
+    grid-area: card2;
+    width: 300px;
+    height: 320px;
+    background-color: hsl(217, 19%, 35%);
+    margin-left:-330px;
+}
+.grid-card-three{
+    grid-area: card3;
+    width: 300px;
+    height: 310px;
+    background-color: hsl(0, 0%, 100%);
+    margin: -150px 0;
+}
+.grid-card-four{
+    grid-area: card4;
+    width: 650px;
+    height: 310px;
+    background-color:hsl(219, 29%, 14%);
+    margin: -150px 0 0 15px;
+}
+.grid-card-five{
+    grid-area: card5;
+    width: 350px;
+    height: 680px;
+    background-color:hsl(0, 0%, 100%);
+    margin-left: -20px;
+}
+}
