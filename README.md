@@ -6,15 +6,12 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -29,8 +26,6 @@ Users should be able to:
 
 - Solution URL: https://github.com/adisa-ade/Testimonial-Grid-Section.git
 - Live Site URL: https://adisa-ade.github.io/Testimonial-Grid-Section/
-
-## My process
 
 ### Built with
 
