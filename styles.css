@@ -7,12 +7,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     background-color:hsl(210, 46%, 95%);
 }
 
 .border{
     border-radius: 10px;
+    margin: 0.5rem;
+    
 }
+
 img{
     width: 40px;
     height: 40px;
@@ -27,7 +31,7 @@ img{
 .author-name{
     color:hsl(0, 0%, 100%);
     opacity: 95%;
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 .author-position{
     color: hsl(0, 0%, 100%);
@@ -39,7 +43,7 @@ img{
 }
 .review-head{
     color: hsl(0, 0%, 100%);
-    font-size: 1.5rem;
+    font-size: 1rem;
     position:relative; 
     z-index:1;
 }
@@ -47,6 +51,7 @@ img{
     color:hsl(0, 0%, 100%);
     opacity: 70%;
     margin-top: 15px;
+    font-size: 0.8rem;
 }
 .color1{
     color: #000;
@@ -60,27 +65,32 @@ img{
     margin-top: 35px;
     line-height: 20px;
 }
+.empty-space{
+    height: 20px;
+}
+
 /* SCREEN LESS THAN 800 PIXEL WIDE */
-@media screen and (max-width:800px) {
+@media screen and (max-width:500px) {
      .container{
         width:100%;
-        height: 100vh;
+        height: 100%;
         margin-top: 50px;
         display: grid;
-        grid-template-rows:repeat(5, 1fr);
+        grid-template-rows:repeat(auto-fit);
         grid-template-areas: 
         "card1"
         "card2" 
         "card3"
         "card4" 
         "card5";
-        row-gap:3rem;    
+        row-gap: 30px;
 }   
    .grid-card-one{
     grid-area: card1;
-    width: 400px;
-    height: 450px;
+    width: 280px;
+    height: 420px;
     background-color: hsl(263, 55%, 52%);
+    
 }
 .grid-card-one .logo{
     display: flex;
@@ -96,28 +106,89 @@ img{
 }
  .grid-card-two{
     grid-area: card2;
-    width: 400px;
-    height: 300px;
+    width: 280px;
+    height: 260px;
     background-color: hsl(217, 19%, 35%);
 } 
  .grid-card-three{
     grid-area: card3;
-    width: 400px;
-    height: 280px;
+    width: 280px;
+    height: 260px;
     background-color: hsl(0, 0%, 100%);
 } 
 .grid-card-four{
     grid-area: card4;
-    width: 400px;
+    width: 280px;
     height: 420px;
     background-color:hsl(219, 29%, 14%);
     
 }
 .grid-card-five{
     grid-area: card5;
-    width: 400px;
-    height: 500px;
+    width: 280px;
+    height: 620px;
     background-color:hsl(0, 0%, 100%);
+}
+}
+@media screen and (min-width:500px) {
+    .container{
+       width:100%;
+       height: 100%;
+       margin-top: 50px;
+       display: grid;
+       grid-template-rows:repeat(auto-fit);
+       grid-template-areas: 
+       "card1"
+       "card2" 
+       "card3"
+       "card4" 
+       "card5";
+       row-gap: 30px;
+}   
+  .grid-card-one{
+   grid-area: card1;
+   width: 500px;
+   height: 300px;
+   background-color: hsl(263, 55%, 52%);
+   
+}
+.grid-card-one .logo{
+   display: flex;
+   justify-content: flex-end;
+   margin: -90px 30px -50px 0;
+   
+}
+.grid-card-one #logo{
+   border:0; 
+   border-radius:0;
+   height: 130px;
+   width:125px;
+}
+.grid-card-two{
+   grid-area: card2;
+   width: 500px;
+   height: 200px;
+   background-color: hsl(217, 19%, 35%);
+} 
+.grid-card-three{
+   grid-area: card3;
+   width: 500px;
+   height: 200px;
+   background-color: hsl(0, 0%, 100%);
+} 
+.grid-card-four{
+   grid-area: card4;
+   width: 500px;
+   height: 300px;
+   background-color:hsl(219, 29%, 14%);
+   
+}
+.grid-card-five{
+   grid-area: card5;
+   width: 500px;
+   height: 400px;
+   background-color:hsl(0, 0%, 100%);
+  /* margin-bottom: 0px;  */
 }
 }
 /* FOR TABLETS SCREEN*/
@@ -125,7 +196,8 @@ img{
     .container{
         width:100%;
         height: 100vh;
-        margin: 50px;
+        margin-top: 50px;
+        margin-left: 20px;
         display: grid;
         grid-template-rows:repeat(5, 1fr);
         grid-template-areas: 
@@ -137,7 +209,7 @@ img{
    .grid-card-one{
     grid-area: card1;
     width: 380px;
-    height: 450px;
+    height: 380px;
     background-color: hsl(263, 55%, 52%);
 }
 .grid-card-one .logo{
@@ -155,20 +227,20 @@ img{
  .grid-card-two{
     grid-area: card2;
     width: 380px;
-    height: 300px;
+    height: 220px;
     background-color: hsl(217, 19%, 35%);
 } 
  .grid-card-three{
     grid-area: card3;
     width: 380px;
-    height: 300px;
+    height: 220px;
     background-color: hsl(0, 0%, 100%);
     margin-left: -3rem;
 } 
 .grid-card-four{
     grid-area: card4;
     width: 380px;
-    height: 450px;
+    height: 380px;
     background-color:hsl(219, 29%, 14%);
     margin-left: -3rem;
 }
@@ -177,17 +249,18 @@ img{
     width: 800px;
     height: 320px;
     background-color:hsl(0, 0%, 100%);   
-}
+}.empty-space{
+        height: 20px;
+     
+    }
 }
 /* FOR DESKTOP SCREENS */
 @media screen and (min-width:1400px) {
-    body{
-        overflow: hidden;
-    }
     .container{
         width:100%;
         height: 100vh;
         margin-top: 70px;
+        margin-left: 15px;
         display: grid;
         grid-template-columns:auto auto auto;
         grid-template-rows:auto auto;
@@ -220,27 +293,27 @@ img{
     width: 300px;
     height: 320px;
     background-color: hsl(217, 19%, 35%);
-    margin-left:-330px;
+    margin-left:-30px;
 }
 .grid-card-three{
     grid-area: card3;
     width: 300px;
     height: 310px;
     background-color: hsl(0, 0%, 100%);
-    margin: -150px 0;
+    margin: -100px 0;
 }
 .grid-card-four{
     grid-area: card4;
     width: 650px;
     height: 310px;
     background-color:hsl(219, 29%, 14%);
-    margin: -150px 0 0 15px;
+    margin: -100px 0 0 20px;
 }
 .grid-card-five{
     grid-area: card5;
     width: 350px;
-    height: 680px;
+    height: 655px;
     background-color:hsl(0, 0%, 100%);
-    margin-left: -20px;
+    margin-left: 15px;
 }
 }
