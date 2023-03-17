@@ -320,8 +320,11 @@ img{
     background-color:hsl(0, 0%, 100%);
     margin-left: 15px;
 }
+.review-head{
+    font-size:1.3
+    }
     .review-body{
-    font-size:1.2rem;
+    font-size:0.9rem;
     line-height: 22px;
 }
 }
