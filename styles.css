@@ -87,7 +87,7 @@ img{
 }   
    .grid-card-one{
     grid-area: card1;
-    width: 280px;
+    width: 300px;
     height: 650px;
     background-color: hsl(263, 55%, 52%);
     
@@ -106,26 +106,26 @@ img{
 }
  .grid-card-two{
     grid-area: card2;
-    width: 280px;
+    width: 300px;
     height: 260px;
     background-color: hsl(217, 19%, 35%);
 } 
  .grid-card-three{
     grid-area: card3;
-    width: 280px;
+    width: 300px;
     height: 260px;
     background-color: hsl(0, 0%, 100%);
 } 
 .grid-card-four{
     grid-area: card4;
-    width: 280px;
+    width: 300px;
     height: 420px;
     background-color:hsl(219, 29%, 14%);
     
 }
 .grid-card-five{
     grid-area: card5;
-    width: 280px;
+    width: 300px;
     height: 750px;
     background-color:hsl(0, 0%, 100%);
 }
