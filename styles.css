@@ -88,7 +88,7 @@ img{
    .grid-card-one{
     grid-area: card1;
     width: 300px;
-    height: 420px;
+    height: 450px;
     background-color: hsl(263, 55%, 52%);
     
 }
