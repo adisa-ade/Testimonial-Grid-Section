@@ -315,4 +315,7 @@ img{
     background-color:hsl(0, 0%, 100%);
     margin-left: 15px;
 }
+    .review-body{
+    line-height: 22px;
+}
 }
