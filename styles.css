@@ -148,7 +148,7 @@ img{
   .grid-card-one{
    grid-area: card1;
    width: 500px;
-   height: 400px;
+   height: 600px;
    background-color: hsl(263, 55%, 52%);
    
 }
@@ -186,7 +186,7 @@ img{
 .grid-card-five{
    grid-area: card5;
    width: 500px;
-   height: 500px;
+   height: 600px;
    background-color:hsl(0, 0%, 100%);
 }
 }
