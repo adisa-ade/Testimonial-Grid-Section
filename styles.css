@@ -101,7 +101,7 @@ img{
 .grid-card-one #logo{
     border:0; 
     border-radius:0;
-    height: 130px;
+    height: 140px;
     width:125px;
 }
  .grid-card-two{
@@ -126,7 +126,7 @@ img{
 .grid-card-five{
     grid-area: card5;
     width: 280px;
-    height: 620px;
+    height: 630px;
     background-color:hsl(0, 0%, 100%);
 }
 }
