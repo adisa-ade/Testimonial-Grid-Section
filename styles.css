@@ -51,7 +51,6 @@ img{
     color:hsl(0, 0%, 100%);
     opacity: 70%;
     margin-top: 15px;
-    font-size: 0.8rem;
 }
 .color1{
     color: #000;
@@ -129,6 +128,9 @@ img{
     height: 630px;
     background-color:hsl(0, 0%, 100%);
 }
+.review-body{
+    font-size: 0.8rem;
+    }
 }
 @media screen and (min-width:500px) {
     .container{
@@ -188,6 +190,9 @@ img{
    width: 500px;
    height: 400px;
    background-color:hsl(0, 0%, 100%);
+}
+ .review-body{
+   font-size: 0.8rem;
 }
 }
 /* FOR TABLETS SCREEN*/
