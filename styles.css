@@ -27,6 +27,7 @@ img{
 .author{
     display: inline-block;
     margin-left: 10px;
+    font-size:1.2rem;
 }
 .author-name{
     color:hsl(0, 0%, 100%);
@@ -36,7 +37,7 @@ img{
 .author-position{
     color: hsl(0, 0%, 100%);
     opacity: 50%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 .review{
     margin: 30px;
@@ -128,6 +129,9 @@ img{
     height: 630px;
     background-color:hsl(0, 0%, 100%);
 }
+    .review-body{
+    font-size:1rem;
+    }
 .review-body{
     font-size: 0.8rem;
     }
@@ -255,7 +259,6 @@ img{
     background-color:hsl(0, 0%, 100%);   
 }.empty-space{
         height: 20px;
-     
     }
 }
 /* FOR DESKTOP SCREENS */
@@ -321,10 +324,10 @@ img{
     margin-left: 15px;
 }
 .review-head{
-    font-size:1.3
+    font-size:1.3;
     }
     .review-body{
-    font-size:0.9rem;
+    font-size:1rem;
     line-height: 22px;
 }
 }
