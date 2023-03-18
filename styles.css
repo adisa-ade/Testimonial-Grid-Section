@@ -27,17 +27,16 @@ img{
 .author{
     display: inline-block;
     margin-left: 10px;
-    font-size:1.2rem;
 }
 .author-name{
     color:hsl(0, 0%, 100%);
     opacity: 95%;
-    font-size: 0.5rem;
+    font-size:1.2rem;
 }
 .author-position{
     color: hsl(0, 0%, 100%);
     opacity: 50%;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 .review{
     margin: 30px;
@@ -130,10 +129,10 @@ img{
     background-color:hsl(0, 0%, 100%);
 }
     .review-body{
-    font-size:1rem;
+    font-size:1.2rem;
     }
 .review-body{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     }
 }
 @media screen and (min-width:500px) {
@@ -196,7 +195,7 @@ img{
    background-color:hsl(0, 0%, 100%);
 }
  .review-body{
-   font-size: 0.8rem;
+   font-size: 0.6rem;
 }
 }
 /* FOR TABLETS SCREEN*/
@@ -322,6 +321,7 @@ img{
     height: 655px;
     background-color:hsl(0, 0%, 100%);
     margin-left: 15px;
+    line-height:30px
 }
 .review-head{
     font-size:1.3;
