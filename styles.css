@@ -260,7 +260,7 @@ img{
         height: 20px;
     }
 }
- FOR DESKTOP SCREENS 
+/*  FOR DESKTOP SCREENS  */
 @media screen and (min-width:1400px) {
     .container{
         width:100%;
